@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="algebra-green" text-center>
+    <ion-title class="algebra-title">Algebrathics</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>    
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <br>
+  <button ion-button round color="algebra-green" (click)="authLogin()">Sign In</button>
+
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "Algebrathics_offline",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

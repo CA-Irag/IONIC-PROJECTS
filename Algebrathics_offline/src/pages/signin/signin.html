@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar hideBackButton color="algebra-lightbrown">
+    <ion-title class="logo_text" text-center>Algebrathics</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding text-center>
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Name</ion-label>
+        <ion-input type="text" [(ngModel)]="input_name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Section</ion-label>
+        <ion-input type="text" [(ngModel)]="input_section"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>School</ion-label>
+        <ion-input type="text" [(ngModel)]="input_school"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button (click)="submit_info()">Submit</button>
+    
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-header>
+
+  <ion-navbar hideBackButton color="algebra-lightbrown">
+      <ion-title class="logo_text" text-center>Algebrathics</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-list>
+      <ion-item>
+        Name: <b>{{ user_name }}</b>
+      </ion-item>
+      <ion-item>
+        Section: <b>{{ user_section }}</b>
+      </ion-item>
+      <ion-item>
+        School: <b>{{ user_school }}</b>
+      </ion-item>
+    </ion-list>   
+  </ion-card>
+  <ion-card>
+    <ion-list> 
+      <ion-item>
+        Chapter 1: <br>
+          <ul>
+            <li>Topic 1 - 20</li>
+            <li>Topic 2 - 30</li>
+            <li>Summative Test - 50</li>
+          </ul>
+      </ion-item>
+      <ion-item>        
+        Chapter 2: <br>
+        <ul>
+          <li>Topic 1 - 20</li>
+          <li>Topic 2 - 30</li>
+          <li>Summative Test - 50</li>
+        </ul>
+      </ion-item>
+      <ion-item>
+        Total Points Earned: 100 
+      </ion-item>
+      <ion-item>
+        Pre-Test Score: 100
+      </ion-item>
+      <ion-item>
+        Post-Test Score: 100 
+      </ion-item>
+    </ion-list> 
+  </ion-card>
+
+  <div text-center><button ion-button (click)="goToMainMenu()">Go to Lesson</button></div>
+</ion-content>

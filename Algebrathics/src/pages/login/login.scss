@@ -1,0 +1,17 @@
+page-login {
+    .content { background: linear-gradient(to left,#eee, #ddd); }
+    .item {
+        padding: 0;
+        background: none;
+        max-width: 300px;
+        margin: 0 auto;
+        border: none;
+    }
+    .item-md.item-block .item-inner{ padding: 0; }
+    .label.label-md { margin-left: 8px; }
+    .input {
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+}
