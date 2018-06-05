@@ -1,0 +1,10 @@
+<div class="logo" text-center>Algebrathics</div>
+<ion-footer text-center>
+  <ion-navbar color='alg-primary'>
+    <button ion-button clear color='light' (click)="redirect()">
+      <span [hidden]='registered'>Sign Up</span>
+      <span [hidden]='!registered'>Log In</span>
+    </button>
+    <button ion-button clear color='danger' (click)="clear_info()">Reset Info</button>
+  </ion-navbar>
+</ion-footer>

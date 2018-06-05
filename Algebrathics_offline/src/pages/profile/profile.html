@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar hideBackButton color='alg-primary'>
+    <ion-title text-center>My Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+      <ion-card-content>
+        Name: <b>{{ name }}</b><br>
+        Section: <b>{{ section }}</b><br>
+        School: <b>{{ school }}</b><br>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- TAKE PRETEST -->
+    <div text-center>
+      <button ion-button (click)="goto_pretest()" large>Take Pre-Test Exam</button>
+    </div>
+    
+</ion-content>
