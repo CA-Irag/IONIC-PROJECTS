@@ -1,0 +1,7 @@
+{
+  "name": "AlgebrathicsApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

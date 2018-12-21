@@ -1,0 +1,11 @@
+page-welcome {
+  background-image: url('../../assets/imgs/teaching-math.jpg');
+  background-size: cover;
+  background-position: center;
+  ion-footer {
+    &::before { display: none; }
+    ion-navbar {
+      .toolbar-background { background: none !important; }
+    }
+  }
+}

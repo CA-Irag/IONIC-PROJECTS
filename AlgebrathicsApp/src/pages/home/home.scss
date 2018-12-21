@@ -1,0 +1,17 @@
+page-home {
+ ion-header {
+   ion-navbar {
+     button.bar-button-menutoggle { display: block !important; }
+   }
+ }
+  ion-content {
+    .table-scores {
+      width: 100%;
+      font-size: 12px;
+      tr:nth-child(odd) { background: rgba(0,0,0,0.1) }
+      th, td { width: 50%; padding: 0.25em 0.5em; }
+      th { text-align: left; }
+      td { text-align: right; }
+    }
+  }
+}

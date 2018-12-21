@@ -1,0 +1,28 @@
+<!--
+  Generated template for the QuizPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-title>{{quiz_title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content *ngIf="quiz_questions[current_question]">
+      <small>Question no. {{quiz_questions[current_question].N}}</small><br>
+      {{quiz_questions[current_question].Q}}
+      <ion-input type="text" [(ngModel)]="current_answer" name="answer" placeholder="Your answer here"></ion-input>
+      <button ion-button (click)="submitAnswer()">Submit</button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card-content *ngIf="!quiz_questions[current_question]">
+    <small>Score:</small><br>
+    <b>{{quiz_score}} / {{quiz_questions.length}}</b>
+    <button ion-button (click)="updateScores(quiz_key,quiz_score)">Submit Quiz</button>
+  </ion-card-content>
+</ion-content>

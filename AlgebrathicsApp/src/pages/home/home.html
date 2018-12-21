@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-content>
+      <small>Fullname: </small>{{user_details.fullname}}<br>
+      <small>ID number: </small>{{user_details.idnumber}}<br>
+      <small>Section: </small>{{user_details.section}}<br>
+      <small>Email: </small>{{user_details.email}}<br>
+      <small>Username: </small>{{user_details.username}}
+    </ion-card-content>
+  </ion-card>
+
+  <!--<ion-card>-->
+    <!--<ion-card-content>-->
+      <!--<table class="table-scores">-->
+        <!--<tr><th>Chapter 1 &mdash; Topic 1</th><td>10</td></tr>-->
+        <!--<tr><th>Chapter 1 &mdash; Topic 2</th><td>10</td></tr>-->
+        <!--<tr><th>Chapter 2 &mdash; Topic 1</th><td>10</td></tr>-->
+        <!--<tr><th>Chapter 2 &mdash; Topic 2</th><td>10</td></tr>-->
+        <!--<tr><th>Pre Test</th><td>50</td></tr>-->
+        <!--<tr><th>Post Test</th><td>50</td></tr>-->
+      <!--</table>-->
+    <!--</ion-card-content>-->
+  <!--</ion-card>-->
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar text-center>
+    <button ion-button icon-only round (click)="redirectChaptersPage()">
+      <ion-icon name="book"></ion-icon>
+    </button>
+    <button ion-button icon-only round >
+      <ion-icon name="play"></ion-icon>
+    </button>
+    <button ion-button icon-only round >
+      <ion-icon name="bulb"></ion-icon>
+    </button>
+    <button ion-button icon-only round >
+      <ion-icon name="clipboard"></ion-icon>
+    </button>
+    <button ion-button icon-only round >
+      <ion-icon name="stats"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-footer>
